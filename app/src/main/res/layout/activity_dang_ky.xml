@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.DangKy">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="35dp"
+        android:text="Thêm sinh viên vào lớp"
+        android:textColor="#213291"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/tenLopHoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginRight="51dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textColor="#0B0A0A" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_toStartOf="@+id/tenLopHoc"
+        android:layout_toLeftOf="@+id/tenLopHoc"
+        android:text="Tên lớp:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txtMaSV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tenLopHoc"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginLeft="82dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        android:ems="10"
+        android:hint="Nhập Mã sinh viên"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtKyHoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMaSV"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginRight="118dp"
+        android:ems="10"
+        android:hint="Nhập kỳ học"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtSoTC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtKyHoc"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginLeft="86dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginRight="116dp"
+        android:ems="10"
+        android:hint="Nhập số tín chỉ"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnAdd_SV_Lop"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSoTC"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="93dp"
+        android:layout_marginLeft="93dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        android:text="Thêm vào lớp" />
+</RelativeLayout>
