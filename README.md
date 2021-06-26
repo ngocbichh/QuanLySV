@@ -1,3 +1,2 @@
 # QuanLySV
-Giao diện Realative
-Lưu trữ SQLite
+Giao diện Realative và Lưu trữ SQLite
