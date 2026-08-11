@@ -21,8 +21,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String sqlCreateLop = "CREATE TABLE lop (maLop integer PRIMARY KEY AUTOINCREMENT, tenLop TEXT, moTa TEXT )";
         db.execSQL(sqlCreateLop);
 
-        String sqlCreateSVLop = "CREATE TABLE sinhvienLop (id integer PRIMARY KEY AUTOINCREMENT, maSV interger, maLop integer, kyHoc TEXT, soTC integer," +
-                "FOREIGN KEY (maLop) REFERENCES lop (malop), " +
+        String sqlCreateSVLop = "CREATE TABLE sinhvienLop (id integer PRIMARY KEY AUTOINCREMENT, maSV integer, maLop integer, kyHoc TEXT, soTC integer," +
+                "FOREIGN KEY (maLop) REFERENCES lop (maLop), " +
                 "FOREIGN KEY (maSV) REFERENCES sinhvien (maSV))";
         db.execSQL(sqlCreateSVLop);
         Log.d("Create", "Create DB");
@@ -32,7 +32,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         String querySV = "DROP TABLE IF EXISTS sinhvien";
         String queryLop = "DROP TABLE IF EXISTS lop";
+        String querySVLop = "DROP TABLE IF EXISTS sinhvienLop";
         db.execSQL(querySV);
         db.execSQL(queryLop);
+        db.execSQL(querySVLop);
+        onCreate(db);
     }
 }
