@@ -21,6 +21,18 @@
             font-size: 18px;
             color: #333;
         }
+        #counter {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+        }
+        .btn-group {
+            margin-top: 15px;
+        }
+        .btn-group button {
+            margin-right: 10px;
+        }
     </style>
 </head>
 <body>
@@ -28,9 +40,33 @@
     <button onclick="sayHello()">Click me</button>
     <p id="result"></p>
 
+    <div class="btn-group">
+        <button onclick="increment()">Increment</button>
+        <button onclick="decrement()">Decrement</button>
+        <button onclick="resetCounter()">Reset</button>
+    </div>
+    <p id="counter">0</p>
+
     <script>
         function sayHello() {
-            document.getElementById("result").innerText = "Hello, World!";
+            document.getElementById("result").innerText = "Hello, World! ";
+        }
+
+        let count = 0;
+
+        function increment() {
+            count++;
+            document.getElementById("counter").innerText = count;
+        }
+
+        function decrement() {
+            count--;
+            document.getElementById("counter").innerText = count;
+        }
+
+        function resetCounter() {
+            count = 0;
+            document.getElementById("counter").innerText = count;
         }
     </script>
 </body>
